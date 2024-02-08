@@ -1,0 +1,44 @@
+
+<title> Ah Beh Ce </title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+  }
+
+  .line-animation {
+    display: inline-block;
+    position: relative;
+    font-size: 15em; 
+    margin: 0 10px; 
+    color: white; 
+    text-decoration: none; 
+  }
+
+  .line-animation::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff; 
+    transition: width 0.3s ease;
+  }
+
+  .line-animation:hover::after {
+    width: 100%;
+  }
+  @font-face {
+   font-family: TENOCLOCK;
+   src: url(lafoto-main/PROJECT MEDIA/TENOCLOCK-Regular.ttf);
+}
+
+</style>
+</head>
