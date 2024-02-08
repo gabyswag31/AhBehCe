@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE 2024</title>
+
+<title>Ah Beh Ce</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+  }
+
+  .line-animation {
+    display: inline-block;
+    position: relative;
+    font-size: 15em; 
+    margin: 0 10px; 
+    color: white; 
+    text-decoration: none; 
+    transition: transform 0.3s; 
+  }
+
+  .line-animation::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff; 
+    transition: width 0.3s ease;
+    border-radius: 50%; 
+    transform-origin: center; 
+  }
+
+  .line-animation:hover::after {
+    width: 100%;
+  }
+
+  .line-animation:hover {
+    transform: scale(1.2);
+  }
+
+  @font-face {
+    font-family: TENOCLOCK;
+    src: url(lafoto-main/PROJECT MEDIA/TENOCLOCK-Regular.ttf);
+  }
+
+</style>
 </head>
 <body>
-    
-<h1>SILENCE THE NOISE</h1>
-<img src="images/giphy.gif"
-
-<body>
-  <nav>
-    
-  <h1>No color allowed</h1>
-    <p>Welcome to my world 
-        
-        Some say it's a simple place 
-        
-        Well that may be so 
-        
-        But at least, there's always a smile on my face .</p>
-        <img src="images/abstract-loader-white.gif"
-        
-    <h2>Soon their will be light </h2>
-      
-    <h3>Good Bye To This World</h3>
-    <img src="images/agifcolossalflow2.gif"
-   
+  <h1 class="line-animation">Ah</h1>
+  <h1 class="line-animation">Beh</h1>
+  <h1 class="line-animation">Ce</h1>
+</body>
+</html>
