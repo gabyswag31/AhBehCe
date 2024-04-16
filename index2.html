@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <title>AH BEH CE</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black; 
+      font-family: 'Arial Bold';
+      font-size: smaller;
+      opacity: 0; 
+      animation: fadeIn 1s ease forwards; 
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0; 
+      }
+      to {
+        opacity: 1; 
+      }
+    }
+
+    .line-animation {
+      display: inline-block;
+      position: relative;
+      font-size: 9em; 
+      margin: 0 10px; 
+      color: white; 
+      text-decoration: none; 
+      transition: transform 0.3s; 
+    }
+
+    .line-animation::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; 
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #fff; 
+      transition: width 0.3s ease;
+      border-radius: 50%; 
+      transform-origin: center; 
+    }
+
+    .line-animation:hover::after {
+      width: 100%;
+    }
+
+    .line-animation:hover {
+      transform: scale(1.2);
+    }
+    
+    @font-face {
+      font-family: "UglyQua";
+      src: url(projectmedia/uglyqua/UglyQua.ttf);
+    }
+  </style>
+</head>
+<body>
+  <div class="circle-transition"></div>
+  <a href="i1ndex.html" class="line-animation"><h1>Ah</h1></a>
+  <a href="i3ndex.html" class="line-animation"><h1>Beh</h1></a>
+  <a href="index4.html" class="line-animation"><h1>Ce</h1></a>
+</body>
+</html>

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Wait for transition to complete
       setTimeout(function() {
         // After transition, navigate to the new page
-        window.location.href = 'index.html';
+        window.location.href = 'index2.html';
       }, 1000); // 1000ms is the duration of the transition
     });
   });
