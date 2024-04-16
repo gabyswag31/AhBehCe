@@ -8,8 +8,8 @@
     body, html {
         margin: 0;
         padding: 0;
-        overflow-x: hidden; /* Hide horizontal scrollbar */
-        background-color: white; /* Set background color to white */
+        overflow-x: hidden; 
+        background-color: white; 
     }
     .container {
         position: relative;
@@ -20,28 +20,28 @@
     .thick-line {
         position: absolute;
         top: 0;
-        right: -30px; /* Initially outside of the viewport */
+        right: -30px; 
         width: 30px;
         height: 100%;
         background-color: black;
         cursor: pointer;
-        transition: right 0.5s; /* Slide transition */
+        transition: right 0.5s; 
     }
     .next-page {
         position: absolute;
         top: 0;
-        left: 0; /* Changed to 0 for the slide effect */
+        left: 0; 
         width: 100vw;
         height: 100vh;
-        background-color: #f0f0f0; /* Change to desired background color */
-        z-index: -1; /* Ensure it's below the thick line */
+        background-color: #f0f0f0; 
+        z-index: -1; 
     }
     .gif {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 700px; /* Set width to 700px */
+        width: 700px; 
         height: auto;
     }
 </style>
@@ -51,22 +51,21 @@
 <div class="container">
     <div class="thick-line" id="thickLine" onclick="goToNextPage()"></div>
     <div class="next-page">
-        <!-- Content of the next page goes here -->
+       
     </div>
     <img src="images/audio ah.gif" class="gif" alt="Your GIF">
 </div>
 
 <script>
     setTimeout(function() {
-        document.getElementById('thickLine').style.right = '0'; // Slide in the thick line
-    }, 8000); // Show thick line after 8 seconds
+        document.getElementById('thickLine').style.right = '0'; 
+    }, 8000); 
 
     function goToNextPage() {
-        document.getElementById('thickLine').style.right = '100vw'; // Slide out the thick line
+        document.getElementById('thickLine').style.right = '100vw'; 
         setTimeout(function() {
-            window.location.href = "i3ndex.html"; // Redirect after slide transition
-        }, 500); // Adjust delay to match transition duration
-    }
+            window.location.href = "i3ndex.html"; 
+        }, 500); 
 </script>
 
 </body>
